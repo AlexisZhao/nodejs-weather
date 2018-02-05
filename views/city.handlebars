@@ -1,0 +1,14 @@
+ <h2 class="page-header">Add cities</h2>
+ {{#if errors}}
+      {{#each errors}}
+        <div class="alert alert-danger">{{msg}}</div>
+      {{/each}}
+{{/if}}
+<form method="post" action="/city">
+  <div class="form-group">
+    <label>City Name</label>
+    <input type="text" class="form-control" name="cityName" placeholder="eg. Ottawa, CA">
+  </div>
+
+  <button type="submit" class="btn btn-default">Add</button>
+</form> 
